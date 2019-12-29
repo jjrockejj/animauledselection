@@ -56,7 +56,24 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
   }
   
   
+  @IBAction func refreshButton(_ sender: Any) {
+    print("refresh")
     
+    titleArray = []
+    titleArrayDates = []
+    articles = []
+    databaseArticles = []
+    uniqueArticle = false
+    databaseUpdated = false
+    calculatedAnimal = " "
+    
+        tableView.reloadData()
+    
+    
+    
+  }
+  
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
